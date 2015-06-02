@@ -1,20 +1,49 @@
-body{
-  background-color: #10222B;
-  font-family: 'Oxygen', sans-serif;
+
+body {
+  background-color: #242424
+}
+
+header{
+  background-color: #425955;
+  font-family: 'Montserrat', sans-serif;
   color: #F4F7D9;
-  }
+  margin: 2%;
+  width: auto;
+}
+
+header>h1 {
+  text-align: right;
+  text-decoration: none;
+  font-size: 40px;
+
+}
+
+header>h2{
+  text-align: left;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+article{
+ text-align: center;
+}
+
+footer{
+  background-color: #425955;
+  font-family: 'Montserrat', sans-serif;
+  color: #F4F7D9;
+  font-size: 40px;
+}
+
+a { color: #F4F7D9;
+  text-decoration: none;
+}
+a:visited { color: #F4F7D9;
+  text-decoration: none;
+}
+a:hover { color: #F4F7D9;
+  text-decoration: none;
+}​
 
 
 
-
-
-
-
-
-
-/*  font color: #F4F7D9
-  header and footer color: #BDD684
-  button background: #417378
-  basic font: oxygen
-  header/footer: montserrat}
-*/
