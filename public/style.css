@@ -5,24 +5,37 @@ body {
 header{
   background-color: #425955;
   font-family: 'Montserrat', sans-serif;
-  color: #F4F7D9;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 5px;
-  margin: 2%;
+  color: #FFFFFF;
 }
 
-header>h1 {
+header.page_header{
+  padding-top: 10px;
+  padding-left: 20%;
+  padding-right: 15%;
+  padding-bottom: 5px;
+}
+header.search_page_header{
+  padding-top: 0px;
+  padding-left: 20%;
+  padding-right: 15%;
+  padding-bottom: 95px;
+}
+h1.home_child1 {
   text-align: right;
   text-decoration: none;
-  font-size: 40px;
-
+  font-size: 50px;
 }
 
-header>h2{
+h2.home_child2{
   text-align: left;
   text-decoration: none;
-  font-size: 40px;
+  margin-top: 22px;
+  margin-left: -10px;
+  font-size: 30px;
+}
+
+section {
+  vertical-align: center;
 }
 
 form{
@@ -32,21 +45,30 @@ form{
 footer{
   background-color: #425955;
   font-family: 'Montserrat', sans-serif;
-  color: #F4F7D9;
-  font-size: 40px;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 5px;
+  color: #FFFFFF;
+  font-size: 25px;
 }
 
-a { color: #F4F7D9;
+footer.page_footer{
+  padding-top: 5px;
+  padding-left: 20%;
+  padding-right: 15%;
+  padding-bottom: 5px;
+  margin-left: -10px;
+  margin-top: 75px;
+}
+
+a { color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 65px;
+}
+a:visited { color: #FFFFFF;
   text-decoration: none;
 }
-a:visited { color: #F4F7D9;
-  text-decoration: none;
-}
-a:hover { color: #F4F7D9;
+a:hover { color: #FFFFFF;
   text-decoration: none;
 }​
+
+
 
 
