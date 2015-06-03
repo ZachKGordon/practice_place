@@ -2,8 +2,15 @@
 <html>
   <head>
     <title> Practice Place </title>
-    <meta name='description' content='music, practice, band, place, rehearsal'>
-  </Head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src='app.js'></script>
+    <meta name='description' content='band, music, practice, place, reherasl, pp,'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='reset.css'>
+    <link rel='stylesheet' type='text/css' href='grid.css'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  </head>
   <body>
     <header id="search_header">
       <h1><a href="index.html">Practice Place</a></h1>
@@ -12,7 +19,7 @@
     <section class="search_bar">
       <p>Search available practice spaces by location:</p>
       <form action= "SEARCH_PROCESSER.js"</form>
-        <input type="text" name="search" placeholder="Enter Location"/>
+        <input id="user"type="text" name="search" placeholder="Enter Location"/>
         <input type="submit" value="search"/>
       </form>
     </section>
