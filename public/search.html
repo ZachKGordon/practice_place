@@ -4,8 +4,8 @@
     <title> Practice Place </title>
     <script src="https://cdn.firebase.com/js/client/2.2.6/firebase.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript"></script>
     <script src='app2.js'></script>
+    <script type="text/javascript"></script>
     <meta name='description' content='band, music, practice, place, reherasl, pp,'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' type='text/css' href='reset.css'>
@@ -18,11 +18,20 @@
       <h1 class='grid_6 home_child1'><a href="index.html">Practice Place</a></h1>
     </header>
     <section class="search_bar">
-      <p>Search available practice spaces by location:</p>
-      <form action= "SEARCH_PROCESSER.js"</form>
-        <input id="user"type="text" name="search" placeholder="Enter Location"/>
-        <input type="submit" value="search"/>
+      <p>Search available practice spaces by location:
+      <form action="results.html">
+        <input  id="user" type="text" placeholder="Enter Location"/>
+        <button class='grid_12'type = "button" id = "submit"> Search</button>
       </form>
+    <div id='resultsDisplay1'></div>
+    <div id='resultsDisplay2'></div>
+    <div id='resultsDisplay3'></div>
+    <div id='resultsDisplay4'></div>
+    <div id='resultsDisplay5'></div>
+    <div id='resultsDisplay6'></div>
+    <div id='resultsDisplay7'></div>
+    <div id='resultsDisplay8'></div>
+    </p>
     </section>
     <footer class='container_12 page_footer grid_12'><h4><a href="FAQ.html">FAQ</a></h4></footer>
   </body>

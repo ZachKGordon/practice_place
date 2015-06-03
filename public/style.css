@@ -58,6 +58,15 @@ footer.page_footer{
   margin-top: 75px;
 }
 
+p{
+  color: white;
+}
+
+div{
+  position: block;
+  color: white;
+}
+
 a { color: #FFFFFF;
   text-decoration: none;
   margin-right: 65px;
