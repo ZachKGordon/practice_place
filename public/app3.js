@@ -6,13 +6,12 @@ $(function(){
     $('#submit').on('click', function() {
       var input = $('#user').val();
       var display = function(input){
-        $('#resultsDisplay2').text(data.neighborhood);
-        $('#resultsDisplay3').text(data.cost);
-        $('#resultsDisplay4').text(data.time);
-        $('#resultsDisplay5').text(data.size);
-        $('#resultsDisplay6').text(data.outlets);
-        $('#resultsDisplay7').text(data.contact);
-        $('#resultsDisplay8').text(data.image);
+        $('#resultsDisplay1').text(data.neighborhood);
+        $('#resultsDisplay2').text(data.cost);
+        $('#resultsDisplay3').text(data.time);
+        $('#resultsDisplay4').text(data.size);
+        $('#resultsDisplay5').text(data.outlets);
+        $('#resultsDisplay6').text(data.contact);
       }
       if (input == snapshot.child("wallingford/zip").val()){
         var data = snapshot.child("wallingford").val();
