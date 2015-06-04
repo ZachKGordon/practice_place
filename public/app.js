@@ -1,5 +1,4 @@
 function Practice_place(id, location, cost, time, size, outlets, email, img) {
-  this.id = id;
   this.location = location;
   this.cost = cost;
   this.time = time;
