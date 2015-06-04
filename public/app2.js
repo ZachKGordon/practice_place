@@ -80,6 +80,7 @@ $(function(){
       if (input == snapshot.child("wallingford/zip").val()){
         var data = snapshot.child("wallingford").val();
         display();
+        $('#picDisplay').attr('src',array[1].link);
       } else if (input == snapshot.child("ballard/zip").val()){
         var data = snapshot.child("ballard").val();
         display();
@@ -96,5 +97,16 @@ $(function(){
         alert('Invalid Zip Code');
       }
     });
+
+      $.ajax({
+        url:'https://api.imgur.com/3/album/cv3fW.json',
+        headers:{
+         "Authorization": "Client-ID d956fdd060faa48"
+        }
+       })
+      .done(function(info) {
+        array = info.data.images;
+        console.log(array[1].link);
+      });
   });
 });
