@@ -4,7 +4,6 @@
     <title> Practice Place </title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript"></script>
-    <script src='app.js'></script>
     <meta name='description' content='band, music, practice, place, reherasl, pp,'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' type='text/css' href='reset.css'>
@@ -18,11 +17,21 @@
     </header>
     <section class="search_bar">
       <p>Search available practice spaces by location:</p>
-      <form action= "results.html"</form>
+
         <input id="user"type="text" name="search" placeholder="Enter Location"/>
-        <input type="submit" value="search"/>
-      </form>
+        <table id="main">
+    <tr>
+      <th>Source</th>
+      <th></th>
+      <th>Data</th>
+      <th></th>
+      <th>Output</th>
+    </tr>
+  </table>
+
     </section>
+    <button id="btn">search</button>
     <footer class='container_12 page_footer grid_12'><h4><a href="FAQ.html">FAQ</a></h4></footer>
+    <script src='app.js'></script>
   </body>
 </html>
