@@ -42,9 +42,9 @@ $(function(){
       }
     });
     $.ajax({
-      url:'https://api.imgur.com/3/album/cv3fW.json',
+      url:'https://api.imgur.com/3/album/4PmyT',
       headers:{
-       "Authorization": "Client-ID d956fdd060faa48"
+       "Authorization": "Client-ID 2da3cb73277c0a7"
       }
     })
     .done(function(info) {
@@ -52,3 +52,4 @@ $(function(){
     });
   });
 });
+
