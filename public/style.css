@@ -1,5 +1,6 @@
+
 body {
-  background-color: #242424
+  background: #242424;
 }
 
 header{
@@ -8,31 +9,30 @@ header{
   color: #FFFFFF;
 }
 
-header.page_header{
-  padding-top: 10px;
-  padding-left: 20%;
-  padding-right: 15%;
-  padding-bottom: 5px;
-}
-header.search_page_header{
-  padding-top: 0px;
-  padding-left: 20%;
-  padding-right: 15%;
-  padding-bottom: 95px;
-}
-h1.home_child1 {
-  text-align: right;
-  text-decoration: none;
+
+h1{
   font-size: 50px;
+  width: 50%;
+  margin: 1px, 1px, 1px, 1px;
+
+
 }
 
-h2.home_child2{
-  text-align: left;
-  text-decoration: none;
-  margin-top: 22px;
-  margin-left: -10px;
-  font-size: 30px;
+h2{
+  font-size: 50px;
+  width: 50%;
+  margin: 1px, 1px, 1px, 1px;
+
 }
+
+.embed {
+    position: relative;
+    padding: 0;
+    padding-bottom: 56.25%; /* 16:9 ratio*/
+    height: 0;
+    overflow: hidden;
+}
+
 
 section {
   vertical-align: center;
@@ -58,6 +58,15 @@ footer.page_footer{
   margin-top: 75px;
 }
 
+p{
+  color: white;
+}
+
+article{
+  position: block;
+  color: white;
+}
+
 a { color: #FFFFFF;
   text-decoration: none;
   margin-right: 65px;
@@ -68,7 +77,6 @@ a:visited { color: #FFFFFF;
 a:hover { color: #FFFFFF;
   text-decoration: none;
 }​
-
 
 
 

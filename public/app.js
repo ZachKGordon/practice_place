@@ -1,8 +1,4 @@
-/*Create the constructor that will build our practice locations with location
-price, hours, sqft, power, contact information. */
-
 function Practice_place(id, location, cost, time, size, outlets, email, img) {
-  this.id = id;
   this.location = location;
   this.cost = cost;
   this.time = time;
@@ -14,6 +10,7 @@ function Practice_place(id, location, cost, time, size, outlets, email, img) {
 }
 
 var places = [];
+
 
   if (localStorage.Places) {
     places = JSON.parse(localStorage.getItem('Places'));
@@ -168,3 +165,15 @@ var places = [];
 // if match made, we have to find location element details element, imcost element
 // attach correspoding key values to the elements within the results html page
 
+=======
+  //For loop to iterate through our locations, then we can stringify and parse
+insertplace = function() {
+ for(var i = 0; i < places.length; i++) {
+   //console.log(places.length);
+   localStorage.setItem(places[i].id, JSON.stringify(places[i]));
+  // console.log(JSON.parse(localStorage.getItem('places[i]')));
+ }
+}
+insertplace();
+localStorage.setItem($('#user').val(),$('#user').val());
+>>>>>>> efe4b3277d8db478e161b12610955bf3439a3bb3
