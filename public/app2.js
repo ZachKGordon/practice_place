@@ -11,7 +11,6 @@ $(function(){
       size: "Size: 500 sqft",
       outlets: "Power Outlets: 6",
       contact: "Contact Info: nacy@gmail.com",
-      // image: "http://bygghjalphemma.se/wp-content/uploads/2014/11/bill-gates-wealthiest-person.jpg",
     },
      ballard: {
       neighborhood: "Location: Ballard, WA",
@@ -21,7 +20,6 @@ $(function(){
       size: "Size: 25 sqft",
       outlets: "Power Outlets: 1",
       contact: "Contact Info: chad@hotmail.com",
-      // image: "http://bygghjalphemma.se/wp-content/uploads/2014/11/bill-gates-wealthiest-person.jpg",
     },
      tacoma: {
       neighborhood: "Location: Tacoma, WA",
@@ -31,7 +29,6 @@ $(function(){
       size: "Size: 250 sqft",
       outlets: "Power Outlets: 3",
       contact: "Contact Info: simple1@gmail.com",
-      // image: "http://bygghjalphemma.se/wp-content/uploads/2014/11/bill-gates-wealthiest-person.jpg",
     },
     bend: {
       neighborhood: "Location: Bend, OR",
@@ -41,7 +38,6 @@ $(function(){
       size: "Size: 350 sqft",
       outlets: "Power Outlets: 4",
       contact: "Contact Info: mdh@yahoo.com",
-      // image: "http://bygghjalphemma.se/wp-content/uploads/2014/11/bill-gates-wealthiest-person.jpg",
     },
     auburn: {
       neighborhood: "Location: Auburn, WA",
@@ -51,7 +47,6 @@ $(function(){
       size: "Size: 1000 sqft",
       outlets: "Power Outlets: 0",
       contact: "Contact Info: ezbeats@gmail.com",
-      // image: "http://bygghjalphemma.se/wp-content/uploads/2014/11/bill-gates-wealthiest-person.jpg",
     },
     westley: {
       neighborhood: "Location: Westley, CA",
@@ -61,52 +56,6 @@ $(function(){
       size: "Size: 800 sqft",
       outlets: "Power Outlets: 2",
       contact: "Contact Info: classictunes@yahoo.com",
-      // image: "http://bygghjalphemma.se/wp-content/uploads/2014/11/bill-gates-wealthiest-person.jpg",
     },
-  });
-
-  myFirebaseRef.on("value", function(snapshot) {
-    $('#submit').on('click', function() {
-      var input = $('#user').val();
-      var display = function(input){
-        $('#resultsDisplay2').text(data.neighborhood);
-        $('#resultsDisplay3').text(data.cost);
-        $('#resultsDisplay4').text(data.time);
-        $('#resultsDisplay5').text(data.size);
-        $('#resultsDisplay6').text(data.outlets);
-        $('#resultsDisplay7').text(data.contact);
-        $('#resultsDisplay8').text(data.image);
-      }
-      if (input == snapshot.child("wallingford/zip").val()){
-        var data = snapshot.child("wallingford").val();
-        display();
-        $('#picDisplay').attr('src',array[1].link);
-      } else if (input == snapshot.child("ballard/zip").val()){
-        var data = snapshot.child("ballard").val();
-        display();
-      } else if (input == snapshot.child("tacoma/zip").val()){
-        var data = snapshot.child("tacoma").val();
-        display();
-      } else if (input == snapshot.child("bend/zip").val()){
-        var data = snapshot.child("bend").val();
-        display();
-      } else if (input == snapshot.child("auburn/zip").val()){
-        var data = snapshot.child("auburn").val();
-        display();
-      } else {
-        alert('Invalid Zip Code');
-      }
-    });
-
-      $.ajax({
-        url:'https://api.imgur.com/3/album/cv3fW.json',
-        headers:{
-         "Authorization": "Client-ID d956fdd060faa48"
-        }
-       })
-      .done(function(info) {
-        array = info.data.images;
-        console.log(array[1].link);
-      });
   });
 });
