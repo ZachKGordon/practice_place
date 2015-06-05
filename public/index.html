@@ -11,21 +11,26 @@
     <link rel='stylesheet' type='text/css' href='style.css'>
     <link rel='stylesheet' type='text/css' href='skeleton.css'>
   </head>
-
   <body class= 'container' >
     <header class= 'row '>
       <div class='twelve.column'>
-       <img class='small'src="http://i.imgur.com/AbMXvtB.png"></img>
-      <div>
+       <img class='small'src="http://i.imgur.com/AbMXvtB.png"><a href="index.html"></img>
+      </div>
     </header>
-    <section = "embed">
-      <iframe width="960" height="540" src="https://www.youtube.com/embed/xLiCd1ff53g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      <section class ='container'>
+        <article class ='twelve.column'>
+          <div class ='embed-container'>
+            <iframe src="https://www.youtube.com/embed/xLiCd1ff53g" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </article>
+      </section>
+    <section class='container'>
+      <form class='twelve.column' action="search.html">
+          <input type="submit" value="Search Now!">
+        </form>
     </section>
-    <form class='grid_12' action="search.html">
-        <input type="submit" value="Search Now!">
-      </form>
-    </main>
-    <footer class='container_12 page_footer'><a class='grid_12' href="FAQ.html">FAQ</a>
+    <footer class='row'>
+      <a class='two.column' href="FAQ.html">FAQ</a>
     </footer>
   </body>
 </html>
