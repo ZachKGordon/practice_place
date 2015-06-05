@@ -383,8 +383,10 @@ img.medium {
     width: 200px;
     height: 200px; }
 img.small {
-    width: 100px;
-    height: 100px; }
+    width: 600px;
+    height: 200px;
+    padding-left: 190px;
+  }
  img.large {
     width: 500px;
     height: 400px; }
