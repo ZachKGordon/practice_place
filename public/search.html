@@ -9,30 +9,47 @@
     <script type="text/javascript"></script>
     <meta name='description' content='band, music, practice, place, reherasl, pp,'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
-   <link rel='stylesheet' type='text/css' href='reset.css'>
+    <link rel='stylesheet' type='text/css' href='reset.css'>
     <link rel='stylesheet' type='text/css' href='style.css'>
     <link rel='stylesheet' type='text/css' href='skeleton.css'>
+
   </head>
   <body class='container'>
-    <header class='row' id="search_header">
+    <header class='row'>
       <h2 class='six.column'>Search Page</h2>
       <h1 class='six.column'><a href="index.html">Practice Place</a></h1>
     </header>
-    <section class="search_bar">
-      <p>Search available practice spaces by location:
-      <form action="results.html">
-        <input  id="user" type="text" placeholder="Enter Zip"/>
-        <button class='' type ="button" id="submit"> Search</button>
-      </form>
-    <article id='resultsDisplay1'></article>
-    <article id='resultsDisplay2'></article>
-    <article id='resultsDisplay3'></article>
-    <article id='resultsDisplay4'></article>
-    <article id='resultsDisplay5'></article>
-    <article id='resultsDisplay6'></article>
-    <p> <img class='medium' scr="" id="picDisplay"></p>
-    </p>
+    <section class="container">
+      <article class="row">
+        <p id="searchBar">Search available practice spaces by zip code:</p>
+        <form action="results.html">
+          <input  id="user" type="text" placeholder="Enter Zip"/>
+          <button class='' type ="button" id="submit">Search</button>
+        </form>
+      </article>
     </section>
-    <footer class=''><h4><a href="FAQ.html">FAQ</a></h4></footer>
+    <section class='row container info'>
+      <div class='four columns' id='locateRe'>
+        <p>Space Locations:</p>
+        <article id='resultsDisplay1'></article>
+      </div>
+      <div class='four columns' id='detailsRe'>
+        <p>Space Details:</p>
+        <ul id='detailsRe'>
+          <li id='resultsDisplay2'></article>
+          <li id='resultsDisplay3'></article>
+          <li id='resultsDisplay4'></article>
+          <li id='resultsDisplay5'></article>
+          <li id='resultsDisplay6'></article>
+        </ul>
+      </div>
+      <div class='four columns' id='imgRe'>
+        <p>Space Image</p>
+        <img class='medium' scr="" id="picDisplay">
+      </div>
+    </section>
+    <footer class='row'>
+      <a class='two.column' href="FAQ.html">FAQ</a>
+    </footer>
   </body>
 </html>
