@@ -78,6 +78,7 @@ p{
 p#searchBar{
   text-align: center;
   font-size: 30px;
+  text-shadow: 3px 3px 3px #000000;
 }
 
 input{
@@ -107,19 +108,18 @@ a:hover { color: #F4F7D9;
   text-decoration: none;
 }
 ​
-img.medium {
-    width: 200px;
-    height: 200px;
-}
-
 h3{color: white;
+  padding-top: 30px;
  font-size: 40px;
  font-family: 'Montserrat', sans-serif;
+ text-shadow: 3px 3px 3px #000000;
 }
+
 h5{
  color: white;
  font-size: 30px;
  font-family: 'Montserrat', sans-serif;
+ text-shadow: 3px 3px 3px #000000;
 }
 
 a.list{
@@ -128,6 +128,10 @@ a.list{
  padding-bottom: 20;
  font-size: 20px;
  font-family: 'Belgrano', serif;
+}
+
+.faq{
+  font-size: 18px;
 }
 
 li.liList{
