@@ -383,9 +383,8 @@ img.medium {
     width: 200px;
     height: 200px; }
 img.small {
-    width: 600px;
-    height: 200px;
-    padding-left: 190px;
+    width: 135%;
+    height: 100%;
   }
  img.large {
     width: 500px;
