@@ -6,7 +6,7 @@ body {
 header{
   background-color: #425955;
   font-family: 'Montserrat', sans-serif;
-  color: #F4F7D9;
+  color: #ffffff;
   border-radius: 10px 10px 10px 10px;
   border-color: 1px solid
 }
@@ -55,7 +55,6 @@ form{
  text-align: center;
 }
 
-
 footer{
   background-color: #425955;
   font-family: 'Montserrat', sans-serif;
@@ -63,7 +62,8 @@ footer{
   font-size: 25px;
   text-shadow: 2px 2px 2px #000000;
   border-radius: 10px 10px 10px 10px;
-  border-color: 1px solid
+  border-color: 1px solid;
+  margin-top: 10px;
 }
 
 .twelve.column input{
@@ -71,9 +71,13 @@ footer{
 }
 
 p{
-  color: #F4F7D9;
-  font-size: 30px;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: left;
+}
+p#searchBar{
   text-align: center;
+  font-size: 30px;
 }
 
 input{
@@ -84,7 +88,12 @@ article{
   color: white;
 }
 
-a { color: #F4F7D9;
+li {
+  color: #ffffff;
+  list-style-type: none;
+}
+
+a { color: #ffffff;
   text-decoration: none;
   margin-right: 65px;
 }
@@ -96,10 +105,13 @@ a:hover { color: #F4F7D9;
 }​
 img.medium {
     width: 200px;
-    height: 200px;}
-  img.small {
+    height: 200px;
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+}
+img.small {
     width: 100px;
     height: 100px;
-  }
+}
 
-
+.row
