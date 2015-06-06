@@ -17,7 +17,6 @@ h1{
   width: 50%;
   margin: 1px, 1px, 1px, 1px;
   text-shadow: 2px 2px 2px #000000
-
 }
 
 h2{
@@ -29,11 +28,11 @@ h2{
 }
 
 .embed-container {
-    position: relative;
-    padding: 0;
-    padding-bottom: 56.25%; /* 16:9 ratio*/
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding: 0;
+  padding-bottom: 56.25%; /* 16:9 ratio*/
+  height: 0;
+  overflow: hidden;
 }
 
 .embed-container iframe,
@@ -75,6 +74,7 @@ p{
   font-size: 25px;
   text-align: left;
 }
+
 p#searchBar{
   text-align: center;
   font-size: 30px;
@@ -84,6 +84,7 @@ p#searchBar{
 input{
   padding-top: 10px;
 }
+
 article{
   position: block;
   color: white;

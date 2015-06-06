@@ -2,28 +2,30 @@ $(function(){
 
   var myFirebaseRef = new Firebase("https://practiceplace.firebaseio.com/");
 
-  $('#questions1').click(function (e) {
+  $('#questions1').click(function (e){
     e.preventDefault();
-   if ( $( "#answers1" ).is( ":hidden" ) ) {
-     $( "#answers1" ).slideDown( "slow" );
-   } else {
-    $( "#answers1" ).hide('slow');
+   if ($("#answers1").is(":hidden")){
+     $("#answers1").slideDown("slow");
+   } else{
+    $("#answers1").hide('slow');
    }
  });
- $('#questions2').click(function (e) {
+
+ $('#questions2').click(function (e){
       e.preventDefault();
-   if ( $( "#answers2" ).is( ":hidden" ) ) {
-     $( "#answers2" ).slideDown( "slow" );
+   if ($("#answers2").is(":hidden")) {
+     $( "#answers2").slideDown("slow");
    } else {
-    $( "#answers2" ).hide('slow');
+    $("#answers2").hide('slow');
     }
  });
+
  $('#questions3').click(function (e) {
       e.preventDefault();
-   if ( $( "#answers3" ).is( ":hidden" ) ) {
-     $( "#answers3" ).slideDown( "slow" );
+   if ($("#answers3").is(":hidden")) {
+     $("#answers3").slideDown("slow");
    } else {
-    $( "#answers3" ).hide('slow');
+    $("#answers3").hide('slow');
     }
  });
 
